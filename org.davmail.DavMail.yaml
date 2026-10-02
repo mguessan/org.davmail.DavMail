@@ -1,6 +1,6 @@
 app-id: org.davmail.DavMail
 runtime: org.gnome.Platform
-runtime-version: '50'
+runtime-version: '51'
 sdk: org.gnome.Sdk
 finish-args:
   # X11 access
@@ -52,7 +52,7 @@ modules:
       - type: file
         dest-filename: jdk.tgz
         url: https://api.azul.com/zulu/download/community/v1.0/bundles/latest/binary/?jdk_version=21&ext=tar.gz&os=linux&arch=x86&hw_bitness=64&bundle_type=jdk&features=fx
-        sha256: 4fe6c67ded08a18c17d4e761eba09d44bd5fcdbbc0eb736a33d7b684b09bc766
+        sha256: 6b3f9319490fb265252647676ef74008695b9d3a3725b214c3679cb01dfde87d
         only-arches:
           - x86_64
       - type: file
@@ -63,13 +63,13 @@ modules:
           - aarch64
       - type: file
         dest-filename: swt.zip
-        url: https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.37-202509050730/swt-4.37-gtk-linux-x86_64.zip&mirror_id=1
-        sha256: 13ff4f7061078c03e17a2ace3c47931bca34cd5ad17494ee8cfc46780bb057db
+        url: https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.41-202608281142/swt-4.41-gtk-linux-x86_64.zip&mirror_id=1
+        sha256: 6e01720501830cf313183643cd0205a115bf360eb9596f11aca0d176b5a98dcd
         only-arches:
           - x86_64
       - type: file
         dest-filename: swt.zip
-        url: https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.37-202509050730/swt-4.37-gtk-linux-aarch64.zip&mirror_id=1
+        url: https://www.eclipse.org/downloads/download.php?file=/eclipse/downloads/drops4/R-4.41-202608281142/swt-4.41-gtk-linux-aarch64.zip&mirror_id=1
         sha256: e41352cee8753c3afc72c5198abf1397779529557752b276f8bd05c1f0054ae4
         only-arches:
           - aarch64
